@@ -1,7 +1,7 @@
 let c = document.getElementById("my-canvas");
 let ctx = c.getContext("2d");
 let background = document.createElement("img");
-background.src = "/martial-arts/images/background.jpg";
+background.src = "images/background.jpg";
 
 let loadImage = (src, callback) => {
   let img = document.createElement("img");
@@ -10,7 +10,7 @@ let loadImage = (src, callback) => {
 };
 
 let imagesPath = (frameNumber, animation) => {
-  return "/martial-arts/images/" + animation + "/" + frameNumber + ".png";
+  return "images/" + animation + "/" + frameNumber + ".png";
 };
 
 let frames = {
